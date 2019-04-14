@@ -26,7 +26,7 @@
 * and finally create a user with a simple token to call the API using
 `php artisan generate:token`
 
- #### Testing Setup
+ #### Testing The Setup
  to test the API, use any REST client to make a POST request to the end point 
  `/sms`
  with the headers:
@@ -45,3 +45,7 @@ if everything is setup correctly you should get a response like this one
 ``{
   "response": "Good day! I have a lot coffee and snacks. What can I get you to drink?"
   }``
+  
+ #### Restcomm (RVD) Setup Guide 
+  
+In progress.. 
