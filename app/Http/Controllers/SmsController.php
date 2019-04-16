@@ -20,7 +20,7 @@ class SmsController extends Controller
     public function dialogFlow(Request $request)
     {
         $sms = $request->input('sms');
-        $response = DialogFlowDetectIntent::detectIntent(env("PROJECT_ID"),$sms,null);
+        $response = DialogFlowDetectIntent::detectIntent(env("PROJECT_ID"),$sms,$request->user()->id);
         return ['response'=>$response];
     }
     //
