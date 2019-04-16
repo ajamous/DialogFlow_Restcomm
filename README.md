@@ -1,3 +1,21 @@
+## Introduction
+
+This is a coffee ordering SMS application powered by Google's machine learning and Ai + Restcomm Cloud.
+
+This agent allows your app to help users with order coffee drinks, snacks, and other merchandise from a coffee shop service. 
+
+* Examples: 
+
+User: I’d like a coffee to go. 
+User: Can I get a small iced latte with low fat milk? 
+User: Two medium cappuccinos please.  
+User: Can I get three doughnuts please? 
+User: I’d love to get a bagel with cream cheese. 
+User: I’m hungry. 
+User: I would like to order a gift card with $50 on it. 
+User: I’m looking for a present.
+
+
 #### Installation
 * clone this project:
 
@@ -26,7 +44,7 @@
 * and finally create a user with a simple token to call the API using
 `php artisan generate:token`
 
- #### Testing Setup
+ #### Testing The Setup
  to test the API, use any REST client to make a POST request to the end point 
  `/sms`
  with the headers:
@@ -45,3 +63,7 @@ if everything is setup correctly you should get a response like this one
 ``{
   "response": "Good day! I have a lot coffee and snacks. What can I get you to drink?"
   }``
+  
+ #### Restcomm (RVD) Setup Guide 
+  
+In progress.. 
