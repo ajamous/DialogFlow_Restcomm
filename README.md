@@ -39,7 +39,7 @@ User: I’m looking for a present.
 #### Complete installation
 * copy the .env file `cp .env.example .env` and open for edit
 * set **database** parameters.
-* rename the downloaded JSON file to `PROJECT_ID.json` replace PROJECT_ID with the generated projectId, can be found in Dialogdlow console or inside the json file.
+* rename the downloaded JSON file to `AGENT_NAME.json` replace AGENT_NAME with the Agent Name that you are using, this will also be the active end point for this Agent `/AGENT_NAME`
 * then run `php artisan migrate` to create the database tables.
 * and finally create a user with a simple token to call the API using
 `php artisan generate:token`
