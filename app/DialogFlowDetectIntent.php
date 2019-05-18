@@ -18,7 +18,7 @@ class DialogFlowDetectIntent
     public static function detectIntent($projectId, $text, $sessionId, $languageCode = 'en-US')
     {
         // new session
-        $sessionsClient = new SessionsClient(['credentials' => base_path(env('GOOGLE_APPLICATION_CREDENTIALS'))]);
+        $sessionsClient = new SessionsClient(['credentials' => base_path($projectId.'.json')]);
         $session = $sessionsClient->sessionName($projectId, $sessionId ?: uniqid());
 
         // query for each string in array
@@ -35,7 +35,7 @@ class DialogFlowDetectIntent
         $response = $sessionsClient->detectIntent($session, $queryInput);
         $queryResult = $response->getQueryResult();
         $fulfilmentText = $queryResult->getFulfillmentText();
-        return $fulfilmentText;
         $sessionsClient->close();
+        return $fulfilmentText;
     }
 }
